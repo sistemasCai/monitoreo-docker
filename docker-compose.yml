@@ -36,11 +36,9 @@ services:
     ports:
     - 9100:9100
     #linux
-     command:
-     - '--path.rootfs=/host'
+     command: '--path.rootfs=/host'
      pid: host
-     volumes:
-     - '/:/host:ro,rslave'
+     volumes: '/:/host:ro,rslave'
     ###### windows
     #volumes:
     #  - /proc:/host/proc:ro
